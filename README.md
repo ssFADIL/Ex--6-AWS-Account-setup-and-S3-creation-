@@ -132,6 +132,15 @@ file.txt
 
 <img width="1907" height="856" alt="Screenshot 2026-08-21 153119" src="https://github.com/user-attachments/assets/b6a5df53-b7b8-40ba-82de-8cb534aab0cb" />
 
+<img width="1032" height="318" alt="Screenshot 2026-08-21 153155" src="https://github.com/user-attachments/assets/9649fffa-900d-4d0e-938e-c37178fd7db3" />
 
+<img width="793" height="391" alt="Screenshot 2026-08-21 153208" src="https://github.com/user-attachments/assets/9a2fad68-ddc3-4c7a-b8f1-dea5825253bf" />
 
+<img width="700" height="323" alt="Screenshot 2026-08-21 153223" src="https://github.com/user-attachments/assets/3c71f5d9-ba24-4dbc-9f8c-aa099835f3a1" />
 
+<img width="1032" height="464" alt="Screenshot 2026-08-21 153239" src="https://github.com/user-attachments/assets/a5d75790-2be5-4ba0-b917-ac749495e959" />
+
+<img width="1045" height="383" alt="Screenshot 2026-08-21 153247" src="https://github.com/user-attachments/assets/fa4a265f-cb93-46be-9804-e5eb7caf90f3" />
+
+## Result
+Thus, an Amazon EBS volume was successfully created and attached to an Amazon EC2 instance. The volume was formatted with an ext3 file system, mounted, and used for storing data. An EBS snapshot was successfully created as a backup, and a new EBS volume was restored from the snapshot. The previously deleted file.txt was successfully recovered, demonstrating the backup and restore functionality of Amazon EBS.
