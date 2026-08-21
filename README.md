@@ -31,3 +31,97 @@ To create and configure an Amazon Elastic Block Store (EBS) volume, attach and m
 19. Verify that `file.txt` has been successfully restored.
 
 ---
+
+## Program
+
+### 1. Check Available Storage
+
+```bash
+df -h
+```
+
+### 2. Create an ext3 File System
+
+```bash
+sudo mkfs -t ext3 /dev/sdb
+```
+
+### 3. Create a Mount Directory
+
+```bash
+sudo mkdir /mnt/data-store
+```
+
+### 4. Mount the EBS Volume
+
+```bash
+sudo mount /dev/sdb /mnt/data-store
+```
+
+### 5. Configure Automatic Mounting
+
+```bash
+echo "/dev/sdb   /mnt/data-store ext3 defaults,noatime 1 2" | sudo tee -a /etc/fstab
+```
+
+### 6. View the File System Configuration
+
+```bash
+cat /etc/fstab
+```
+
+### 7. Verify the Mounted Volume
+
+```bash
+df -h
+```
+
+### 8. Create a File in the EBS Volume
+
+```bash
+sudo sh -c "echo some text has been written > /mnt/data-store/file.txt"
+```
+
+### 9. Read the File
+
+```bash
+cat /mnt/data-store/file.txt
+```
+
+### 10. Delete the File
+
+```bash
+sudo rm /mnt/data-store/file.txt
+```
+
+### 11. Verify File Deletion
+
+```bash
+ls /mnt/data-store/
+```
+
+### 12. Create a Mount Directory for the Restored Volume
+
+```bash
+sudo mkdir /mnt/data-store2
+```
+
+### 13. Mount the Restored EBS Volume
+
+```bash
+sudo mount /dev/sdc /mnt/data-store2
+```
+
+### 14. Verify Snapshot Restoration
+
+```bash
+ls /mnt/data-store2/
+```
+
+Expected output:
+
+```text
+file.txt
+```
+
+---
