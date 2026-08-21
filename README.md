@@ -125,3 +125,13 @@ file.txt
 ```
 
 ---
+
+## Outputs
+
+<img width="1907" height="862" alt="Screenshot 2026-08-21 152733" src="https://github.com/user-attachments/assets/23b6bba5-149f-4621-bc81-7f027ebc1a40" />
+
+<img width="1907" height="856" alt="Screenshot 2026-08-21 153119" src="https://github.com/user-attachments/assets/b6a5df53-b7b8-40ba-82de-8cb534aab0cb" />
+
+
+
+
